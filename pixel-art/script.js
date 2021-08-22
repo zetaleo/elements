@@ -37,5 +37,3 @@ function Submit(event) {
 
 const form = document.getElementById("sizePicker");
 form.addEventListener("submit", Submit);
-
-
