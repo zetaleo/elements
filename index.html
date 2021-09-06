@@ -5,33 +5,42 @@
     <!-- <meta http-equiv="refresh" content="0; url=case-converter/index.html" /> -->
     <title>Elements</title>
     <style>
-      body{
-        display: flex;
-        flex-direction: column;
+      body {
         font-family: Arial, Helvetica, sans-serif;
-        margin: 15px 0 0 15px ;
       }
-      a{
-        width:50vw;
+      a {
         text-decoration: none;
-        color:black;
+        color: black;
         padding: 5px 0;
         border-bottom: 1px solid black;
       }
-      @media screen and (min-width: 500px){
-        a{
+      .container {
+        display: flex;
+        flex-direction: column;
+        margin: 15px 0 0 15px;
+        width: 50vw;
+      }
+
+      @media screen and (min-width: 500px) {
+        .container {
+          width: 40vw;
+        }
+      }
+      @media screen and (min-width: 800px) {
+        .container {
           width: 30vw;
         }
       }
     </style>
   </head>
   <body>
-    <a href="./button-spinner/index.html">Button-spinner</a>
-    <a href="./case-converter/index.html">Case-converter</a>
-    <a href="form-validator/index.html">Form-validator</a>
-    <a href="./melody/index.html">Melody</a>
-    <a href="./pixel-art/index.html">Pixel-art</a>
-    <a href="./price-items/index.html">Price-items</a>
-
+    <div class="container">
+      <a href="./button-spinner/index.html">Button-spinner</a>
+      <a href="./case-converter/index.html">Case-converter</a>
+      <a href="form-validator/index.html">Form-validator</a>
+      <a href="./melody/index.html">Melody</a>
+      <a href="./pixel-art/index.html">Pixel-art</a>
+      <a href="./price-items/index.html">Price-items</a>
+    </div>
   </body>
 </html>
