@@ -2,35 +2,53 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <meta http-equiv="refresh" content="0; url=case-converter/index.html" /> -->
     <title>Elements</title>
     <style>
       body {
         font-family: Arial, Helvetica, sans-serif;
       }
+
       a {
         text-decoration: none;
         color: black;
         padding: 5px 0;
-        border-bottom: 1px solid black;
+        border-bottom: 1px dashed grey;
       }
       .container {
-        display: flex;
+        display: grid;
         flex-direction: column;
         margin: 15px 0 0 15px;
-        width: 50%;
+        width: 60%;
+        font-size: 6vw;
+      }
+
+       @media screen and (min-width: 400px) {
+        .container {
+          width: 50%;
+          font-size: 4vw;
+        }
       }
 
       @media screen and (min-width: 500px) {
         .container {
           width: 40%;
+          font-size: 3vw;
         }
       }
+
       @media screen and (min-width: 800px) {
         .container {
           width: 30%;
+          font-size: 2vw;
         }
       }
+            @media screen and (min-width: 1200px) {
+        .container {
+          width: 20%;
+          font-size: 1.5vw;
+        }
     </style>
   </head>
   <body>
